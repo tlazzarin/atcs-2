@@ -1,0 +1,20 @@
+{
+    "BROKER_URL": "localhost",
+    "BROKER_PORT": 1883,
+    "TOPICS": [
+        {
+          "TYPE": "single",
+          "PREFIX": "pc/temp",
+          "TIME_INTERVAL": 1,
+          "DATA": [
+            {
+              "NAME": "temperature",
+              "TYPE": "float",
+              "MIN_VALUE": 40,
+              "MAX_VALUE": 80,
+              "MAX_STEP": 6
+            }
+          ]
+        }
+    ]
+}

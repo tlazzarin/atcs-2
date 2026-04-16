@@ -1,0 +1,12 @@
+services:
+  broker-a:
+    image: eclipse-mosquitto:latest
+    container_name: broker-a
+    ports:
+      - "1883:1883"
+  broker-b:
+    image: eclipse-mosquitto:latest
+    container_name: broker-b
+    ports:
+      - "1884:1883"
+
